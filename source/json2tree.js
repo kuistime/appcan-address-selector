@@ -5,7 +5,9 @@ var path_from ='../data/plain.json';
 var path_to ='../data/tree.json';
 
 var ds=fs.readFileSync(path_from).toString();
+console.log(ds);
 var da=JSON.parse(ds);
+//var da=require(path_from);
 
 var prov = _.filter(da, function(item){
     var s=item.code;

@@ -3,10 +3,9 @@ var fs = require('fs');
 var path_from = '../data/data.txt';
 var path_to = '../data/plain.json';
 
-var stat = fs.statSync(path_from);
+//var stat = fs.statSync(path_from);
 
-var buffer = fs.readFileSync(path_from);
-var s = buffer.toString();
+var s = fs.readFileSync(path_from).toString();
 var arr = s.split(/\n/);
 //console.log(arr.length);
 
